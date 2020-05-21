@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '1936898d-06a1-48b6-b833-2c3ab7e59f03'
-  imageRepository: 'apigateway'
+  imageRepository: 'auth-service'
   containerRegistry: 'slackcpyacr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile.prod'
   tag: latest
