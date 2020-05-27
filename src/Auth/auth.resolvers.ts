@@ -1,8 +1,6 @@
 import { Resolver, Args, Mutation } from '@nestjs/graphql';
 import { AuthService } from './auth.service';
-import { AuthUserCredentials } from './dto/auth-user.dto';
 import { Token } from './gqlTypes/token.gqltype';
-import { UserAuthenticated } from './dto/user-authenticated.dto';
 import { UseGuards } from '@nestjs/common';
 import { GqlLocalAuthGuard } from './guards/gql-local-auth.guard';
 

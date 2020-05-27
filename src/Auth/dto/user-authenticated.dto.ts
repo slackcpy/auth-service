@@ -4,6 +4,6 @@ import { User } from '../gqlTypes/user.gqltype';
 @ObjectType()
 export class UserAuthenticated {
   @Field()
-  @Directive(`@provides(fields: "id email password lastName firstName")`)
+  @Directive(`@provides(fields: "id email lastName firstName")`)
   user: User
 }
