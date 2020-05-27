@@ -11,3 +11,11 @@ directive @external on OBJECT | FIELD_DEFINITION
 directive @requires(fields: String!) on FIELD_DEFINITION
 
 directive @provides(fields: String!) on FIELD_DEFINITION
+
+type Token {
+  accessToken: String!
+}
+
+type Mutation {
+  login(password: String!, email: String!): Token!
+}
